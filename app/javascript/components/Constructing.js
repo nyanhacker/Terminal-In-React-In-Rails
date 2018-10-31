@@ -10,7 +10,7 @@ class Constructing extends React.Component {
         <div style = {{ display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }} >
           <Terminal color='green' backgroundColor='black' barColor='black' style={{ fontWeight: "bold", fontSize: "1em" }}
             commands = {{
-              'open-google': () => window.open('https://www.google.com/', '_blank'),
+              'open-google': () => { window.open('https://www.google.com/', '_blank') },
               showmsg: this.showMsg,
               popup: () => alert('Terminal in React')
             }}
